@@ -1,0 +1,40 @@
+body
+{
+	background-color: black;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 30px;
+}
+
+div, h1
+{
+	text-align: left;
+	color: white;
+	margin: 20px 0;
+}
+h1
+{
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 50px;
+	width: calc(75vw + 60px);
+	text-align: left;
+	padding: 20px 0;
+}
+embed
+{
+	margin: 20px 0;
+	width: calc(75vw + 70px);
+	height: 100vh;
+	
+}
+div
+{
+	padding-left: calc( 12.5vw - 35px );
+}
+#wrapper
+{
+	
+}
