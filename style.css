@@ -23,12 +23,16 @@ h1
 	text-align: left;
 	padding: 20px 0;
 }
-embed,iframe,img
+embed,iframe
 {
 	margin: 20px 0;
 	width: calc(75vw + 70px);
 	height: 100vh;
 	
+}
+img
+{
+	width: calc(75vw + 70px);
 }
 div
 {
