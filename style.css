@@ -31,7 +31,8 @@ embed,iframe
 	
 }
 img
-{
+{	
+	filter: invert(100%);
 	width: calc(75vw + 70px);
 }
 div
