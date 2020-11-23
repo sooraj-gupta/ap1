@@ -23,7 +23,7 @@ h1
 	text-align: left;
 	padding: 20px 0;
 }
-embed
+embed,iframe,img
 {
 	margin: 20px 0;
 	width: calc(75vw + 70px);
