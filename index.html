@@ -3,8 +3,7 @@
 	<head>
 		<title>AP Physics 1</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href = "style.css" rel = "stylesheet">
-		<link href = "web/socialmediaanimation/sharebutton.css" rel = "stylesheet">
+		<link href = "https://sooraj-gupta.github.io/lib/web/fileexplorer/style.css" rel = "stylesheet">
 	</head>
 	
 	<body>
@@ -14,132 +13,15 @@
 		</div>
 		
 		<center>
-			<h1>AP Physics 1</h1>
 			
+			<h1>AP Physics 1</h1>
+			<div style = "color: white; width: 90%; padding-left: 10px;">
+				<a class = "stylebutton currentstyle" onclick = "relax()">Relaxed</a>|<a class = "stylebutton"onclick = "compact()">Compact</a>
+			</div>
+			<br>
 		</center>
 		<script src = "items.js"></script>
-		<script>
-			var colors = [
-				6135733,8498023,7888309,14375000,12819507
-			];
-			var maincolor = getRandomUniqueColor();
-			var hoverfoldercolor = maincolor - 2236962;
-			document.documentElement.style.setProperty('--main', maincolor.toString(16) );
-			document.documentElement.style.setProperty('--maincolorforsharebutton', maincolor.toString(16) );
-			document.documentElement.style.setProperty('--hover-folder', hoverfoldercolor.toString(16) );
-			
-			var filecolor = getRandomUniqueColor();
-			var hoverfilecolor = filecolor - 2236962;
-			document.documentElement.style.setProperty('--file', filecolor.toString(16) );
-			document.documentElement.style.setProperty('--hover-file', hoverfilecolor.toString(16) );
-			
-			function getRandomUniqueColor()
-			{
-				var index = Math.floor( Math.random() * colors.length );
-				var color = colors[index];
-				colors[index] = -1;
-				if( color == -1 )
-					return getRandomUniqueColor();
-				return color;
-			}
-			
-			function openFolder( el )
-			{
-				if( el.nextElementSibling.style.display != "flex" )
-				{
-					el.nextElementSibling.style.display = "flex";
-					el.getElementsByClassName("arrow")[0].style.transform = "rotate(90deg)";
-				}
-			
-				else
-				{
-					el.nextElementSibling.style.display = "none";
-					el.getElementsByClassName("arrow")[0].style.transform = "rotate(0deg)";
-				}
-
-			}
-			
-			function json()
-			{
-				var obj = JSON.parse(items);
-				var parent = document.getElementsByTagName("center")[0];
-				for( var i = 0;  i < obj.length; i++ )
-				{
-					createItem( obj[i], parent );
-				}
-			}
-			
-			
-			function createItem( obj, parent )
-			{
-				if( obj.type == "d" )
-				{
-					createFolder( obj, parent )
-				}
-				else if( obj.type == "f" )
-				{	
-					createFile( obj, parent );
-				}
-			}
-			function createFolder( obj, parent )
-			{
-				var el = document.createElement( "div" );
-				el.className = "folder";
-				var title = document.createElement( "div" );
-				title.className = "title";
-				title.innerHTML = "<a class = 'arrow'>&#9658;</a>" + "&nbsp;&nbsp;" + "<img class = 'icon' src = 'https://img.icons8.com/ios/452/opened-folder.png'>" + "&nbsp;" + obj.name;
-				title.setAttribute( "onclick", "openFolder(this)" );
-				parent.appendChild( el );
-				el.appendChild( title );
-				
-				var cont = document.createElement( "div" );
-				cont.className = "folder-contents";
-				el.appendChild( cont );
-				
-				for ( var i = 0; i < obj.content.length; i++ )
-				{
-					createItem( obj.content[i], cont );
-				}
-			}
-			
-			function createFile( obj, parent )
-			{
-				var el = document.createElement( "div" );
-				el.className = "file";
-				var title = document.createElement( "div" );
-				el.innerHTML =  "<img class = 'icon' src = 'https://webstockreview.net/images/circle-clipart-chain-link-9.png'>" + "&nbsp;" + obj.name;
-				el.setAttribute( "onclick", "goTo(\"" +obj.link+ "\" );" );
-				parent.appendChild( el );
-				if( obj.name == "index.html" )
-				{
-					el.style.width = "calc( 55% - var(--left-padding) )";
-					el.style.borderBottomRightRadius = "0px";
-					el.style.borderTopRightRadius = "0px";
-					var emb = document.createElement("div");
-					emb.className = "link";
-					emb.innerHTML = "View";
-					emb.setAttribute( "onclick", `goTo( '${obj.local}');`);
-					parent.appendChild(emb);
-					
-				}
-			}
-			
-			function goTo( link )
-			{
-				window.location = link;
-			}
-			json();
-			
-		</script>
-		
-		<script>
-			var facebookLink = '';
-			var instagramLink = '';
-			var twitterLink = '';
-			
-			var pathToFolder = "web/socialmediaanimation/"; /*MUST HAVE SLASH AT THE END*/
-		</script>	
-		<script src = "web/socialmediaanimation/sharebutton.js"></script>
+		<script src = "https://sooraj-gupta.github.io/lib/web/fileexplorer/itemcreator.js"></script>
 	</body>
 
 </html>

@@ -1,5 +1,4 @@
-var items = ' [ { "type": "d", "name": "Dynamics", "content": [ { "type":"d", "name":"Study Guides", "content":[ { "type": "f", "name": "Dynamics Study Guide", "link":"dynamics.pdf" } ] } ] }, { "type": "d", "name": "Circular Motion and Gravity", "content": [ { "type":"d", "name":"Study Guides", "content":[ { "type": "f", "name": "Circular Motion and Gravity Study Guide", "link":"Circularmotionandgravity.pdf" } ] } ] }, { "type": "d", "name": "Energy", "content": [ { "type":"d", "name":"Study Guides", "content":[ { "type": "f", "name": "Energy Study Guide", "link":"energy.png" } ] }, { "type":"d", "name":"Test", "content":[ { "type": "f", "name": "Energy 2020 Test", "link":"energytest.png" } ] } ] } ] ';
-
+var items = ' [ { "type": "d", "name": "Dynamics", "content": [ { "type":"d", "name":"Study Guides", "content":[ { "type": "f", "name": "Dynamics Study Guide", "link":"files/dynamics/studyguides/dynamics.pdf" } ] } ] }, { "type": "d", "name": "Circular Motion and Gravity", "content": [ { "type":"d", "name":"Study Guides", "content":[ { "type": "f", "name": "Circular Motion and Gravity Study Guide", "link":"files/ircularmotionandgravity/studyguides/Circularmotionandgravity.pdf" } ] } ] }, { "type": "d", "name": "Energy", "content": [ { "type":"d", "name":"Notes", "content":[ { "type": "f", "name": "Energy Day 3 Notes", "link":"files/energy/notes/energyday3.png" } ] }, { "type":"d", "name":"Study Guides", "content":[ { "type": "f", "name": "Energy Study Guide", "link":"files/energy/studyguides/energy.png" } ] }, { "type":"d", "name":"Test", "content":[ { "type": "f", "name": "Energy 2020 Test", "link":"files/energy/test/energytest.png" } ] } ] }, { "type": "d", "name": "Linear Momentum", "content": [ { "type":"d", "name":"Notes", "content":[ ] }, { "type":"d", "name":"Study Guides", "content":[ { } ] }, { "type":"d", "name":"Test", "content":[ { } ] } ] } ] ';
 
 
 
@@ -31,7 +30,7 @@ var items =
 					{ 
 						"type": "f", 
 						"name": "Dynamics Study Guide", 
-						"link":"dynamics.pdf" 
+						"link":"files/dynamics/studyguides/dynamics.pdf" 
 					}
 				]
 			}
@@ -48,7 +47,7 @@ var items =
 					{ 
 						"type": "f", 
 						"name": "Circular Motion and Gravity Study Guide", 
-						"link":"Circularmotionandgravity.pdf" 
+						"link":"files/ircularmotionandgravity/studyguides/Circularmotionandgravity.pdf" 
 					}
 				]
 			}
@@ -60,12 +59,23 @@ var items =
 		"content": [
 			{
 				"type":"d",
+				"name":"Notes",
+				"content":[
+					{ 
+						"type": "f", 
+						"name": "Energy Day 3 Notes", 
+						"link":"files/energy/notes/energyday3.png" 
+					}
+				]
+			},
+			{
+				"type":"d",
 				"name":"Study Guides",
 				"content":[
 					{ 
 						"type": "f", 
 						"name": "Energy Study Guide", 
-						"link":"energy.png" 
+						"link":"files/energy/studyguides/energy.png" 
 					}
 				]
 			},
@@ -76,7 +86,39 @@ var items =
 					{ 
 						"type": "f", 
 						"name": "Energy 2020 Test", 
-						"link":"energytest.png" 
+						"link":"files/energy/test/energytest.png" 
+					}
+				]
+			}
+			
+		]
+	},
+	{
+		"type": "d",
+		"name": "Linear Momentum",
+		"content": [
+			{
+				"type":"d",
+				"name":"Notes",
+				"content":[
+					
+				]
+			},
+			{
+				"type":"d",
+				"name":"Study Guides",
+				"content":[
+					{ 
+						
+					}
+				]
+			},
+			{
+				"type":"d",
+				"name":"Test",
+				"content":[
+					{ 
+						
 					}
 				]
 			}
