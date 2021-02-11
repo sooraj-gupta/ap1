@@ -4,6 +4,27 @@
 		<title>AP Physics 1</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href = "https://sooraj-gupta.github.io/lib/web/fileexplorer/style.css" rel = "stylesheet">
+		<style>
+			@keyframes fadein{
+				0%{
+					opacity: 0;
+				}
+				100%
+				{
+					opacity: 1;
+				}
+			}
+			body{
+				opacity: 0;
+				animation: fadein 1s forwards 0.2s;
+				overflow-x: hidden;
+			}
+			footer{
+				text-align: center;
+				padding:100px 0px;
+				color: white;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -20,6 +41,12 @@
 			</div>
 			<br>
 		</center>
+		
+		<footer>
+		
+			Copyright &copy; 2021 Sooraj Gupta
+			
+		</footer>
 		<script src = "items.js"></script>
 		<script src = "https://sooraj-gupta.github.io/lib/web/fileexplorer/itemcreator.js"></script>
 	</body>
