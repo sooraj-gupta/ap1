@@ -204,6 +204,17 @@ var items =
 						"link":"files/simpleharmonicmotion/studyguides/simpleharmonicmotion.pdf"
 					}
 				]
+			},
+			{
+				"type":"d",
+				"name":"Tests",
+				"content":[
+					{ 
+						"type":"f",
+						"name":"Simple Harmonic Motion 2021 Exam",
+						"link":"files/simpleharmonicmotion/tests/shmtest.png"
+					}
+				]
 			}
 		]
 	}
