@@ -217,6 +217,23 @@ var items =
 				]
 			}
 		]
+	},
+	{
+		"type": "d",
+		"name": "Electricity and Circuits",
+		"content": [
+			{
+				"type":"d",
+				"name":"Tests",
+				"content":[
+					{ 
+						"type":"f",
+						"name":"Electricity and Circuits 2021 Exam",
+						"link":"files/electricityandcircuits/tests/electricityandcircuits.png"
+					}
+				]
+			}
+		]
 	}
 ] 
 `
